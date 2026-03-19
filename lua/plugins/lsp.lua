@@ -149,6 +149,7 @@ return {
 				cmd = {
 					"clangd",
 					"--header-insertion=never", -- 关闭自动插入 #include
+					"--query-driver=/usr/bin/c++,/usr/bin/g++",
 				},
 			})
 
