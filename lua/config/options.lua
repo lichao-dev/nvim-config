@@ -5,6 +5,12 @@ vim.g.maplocalleader = " "
 
 local opt = vim.opt
 
+-- 编码设置
+-- encoding：Neovim 内部使用 UTF-8 处理文本
+-- fileencodings：打开文件时按顺序尝试这些编码，避免中文文件乱码
+opt.encoding = "utf-8"
+opt.fileencodings = { "utf-8", "gbk", "gb18030" }
+
 opt.mouse = "a"
 -- 禁用右键点击的所有行为
 vim.keymap.set({ "n", "v", "i", "c" }, "<RightMouse>", "<NOP>")
